@@ -16,5 +16,6 @@ public interface KronosDumpRepository extends ReactiveMongoRepository<KronosDump
 	
 	Flux<KronosDump> findByLastName(String lastname);
 	Flux<KronosDump> findByFirstName(String firstname);
+	//Flux<KronosDump> findByP_Bubdep(String subdep);
 	
 }

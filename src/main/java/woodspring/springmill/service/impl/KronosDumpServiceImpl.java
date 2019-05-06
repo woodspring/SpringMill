@@ -53,11 +53,17 @@ public class KronosDumpServiceImpl implements KronosDumpService {
 		Flux<KronosDump> retKDump = kronosRepos.findByLastName(lastname);
 		return retKDump;
 	}
-
+	
 	@Override
 	public Mono<Boolean> delete(String id) {
-		// TODO Auto-generated method stub
+
 		return null;
+	}
+
+	@Override
+	public Flux<KronosDump> findBySubdep(String subdep) {
+		Flux<KronosDump> retKDump = null; //kronosRepos.findByP_Bubdep(subdep);
+		return retKDump;
 	}
 	
 	

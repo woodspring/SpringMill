@@ -15,6 +15,7 @@ public interface KronosDumpService {
 
     Flux<KronosDump> findByFirstname(String firstname);
     Flux<KronosDump> findByLastname(String title);
+    Flux<KronosDump> findBySubdep(String subdep);
 
     Mono<Boolean> delete(String id);
 
